@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learnova - Online Learning Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container nav">
+        <div class="logo">Learnova</div>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="#home">Home</a>
+            <a href="#categories">Categories</a>
+            <a href="#courses">Courses</a>
+            <a href="#instructors">Instructors</a>
+            <a href="#reviews">Reviews</a>
+        </nav>
+
+        <button class="login-btn" id="loginBtn">Login</button>
+        <button class="menu-btn" id="menuBtn">☰</button>
+    </div>
+</header>
+
+<main>
+
+<section class="hero" id="home">
+    <div class="container hero-content">
+
+        <div class="hero-text">
+            <span class="badge">Learn • Grow • Succeed</span>
+
+            <h1>Upgrade Your Skills.<br>
+                <span>Build Your Future.</span>
+            </h1>
+
+            <p>
+                Learn practical skills from industry experts and
+                take your career to the next level.
+            </p>
+
+            <div class="search-box">
+                <input type="text" id="searchInput"
+                    placeholder="Search courses...">
+                <button id="searchBtn">Search</button>
+            </div>
+
+            <div class="hero-actions">
+                <button class="primary-btn" id="exploreBtn">
+                    Explore Courses
+                </button>
+                <button class="secondary-btn" id="viewAllBtn">
+                    View All Courses
+                </button>
+            </div>
+        </div>
+
+        <div class="hero-card">
+            <div class="learning-image">
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80"
+                    alt="Students learning">
+            </div>
+
+            <div class="floating-card">
+                <strong>25K+</strong>
+                <span>Happy Learners</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="stats">
+    <div class="container stats-grid">
+        <div>
+            <h2>25K+</h2>
+            <p>Students</p>
+        </div>
+
+        <div>
+            <h2>120+</h2>
+            <p>Courses</p>
+        </div>
+
+        <div>
+            <h2>80+</h2>
+            <p>Expert Instructors</p>
+        </div>
+
+        <div>
+            <h2>4.9</h2>
+            <p>Average Rating</p>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="categories">
+    <div class="container">
+        <div class="section-heading">
+            <span>EXPLORE</span>
+            <h2>Popular Categories</h2>
+            <p>Choose a category and start learning today.</p>
+        </div>
+
+        <div class="category-grid">
+
+            <div class="category-card active" data-category="Development">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=500&q=80"
+                    alt="Development">
+                <h3>Development</h3>
+                <p>5 Courses</p>
+            </div>
+
+            <div class="category-card" data-category="Design">
+                <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=500&q=80"
+                    alt="Design">
+                <h3>Design</h3>
+                <p>3 Courses</p>
+            </div>
+
+            <div class="category-card" data-category="Business">
+                <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=500&q=80"
+                    alt="Business">
+                <h3>Business</h3>
+                <p>3 Courses</p>
+            </div>
+
+            <div class="category-card" data-category="Marketing">
+                <img src="https://images.unsplash.com/photo-1533750349088-cd871a92f312?auto=format&fit=crop&w=500&q=80"
+                    alt="Marketing">
+                <h3>Marketing</h3>
+                <p>3 Courses</p>
+            </div>
+
+            <div class="category-card" data-category="AI & Data">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=500&q=80"
+                    alt="AI and Data">
+                <h3>AI & Data</h3>
+                <p>3 Courses</p>
+            </div>
+
+            <div class="category-card" data-category="Photography">
+                <img src="https://images.unsplash.com/photo-1452780212940-6f5c0d14d848?auto=format&fit=crop&w=500&q=80"
+                    alt="Photography">
+                <h3>Photography</h3>
+                <p>3 Courses</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="section courses-section" id="courses">
+    <div class="container">
+
+        <div class="section-heading">
+            <span>LEARN FROM EXPERTS</span>
+            <h2>Featured Courses</h2>
+            <p>Upgrade your skills with our professional courses.</p>
+        </div>
+
+        <div class="course-grid" id="courseGrid">
+
+            <!-- 1 -->
+            <div class="course-card"
+                data-title="Complete Web Development Bootcamp"
+                data-category="Development">
+
+                <div class="course-image">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80"
+                        alt="Web Development">
+                    <span>WEB DEVELOPMENT</span>
+                </div>
+
+                <div class="course-content">
+                    <small>DEVELOPMENT</small>
+                    <h3>Complete Web Development Bootcamp</h3>
+                    <p>HTML, CSS, JavaScript and modern web development.</p>
+
+                    <div class="course-meta">
+                        <span>⭐ 4.9</span>
+                        <span>24 Hours</span>
+                    </div>
+
+                    <div class="course-bottom">
+                        <strong>₹1,999</strong>
+                        <button class="details-btn" data-course="Complete Web Development Bootcamp">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2 -->
+            <div class="course-card"
+                data-title="Java Programming Masterclass"
+                data-category="Development">
+
+                <div class="course-image">
+                    <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=800&q=80"
+                        alt="Java Programming">
+                    <span>JAVA</span>
+                </div>
+
+                <div class="course-content">
+                    <small>DEVELOPMENT</small>
+                    <h3>Java Programming Masterclass</h3>
+                    <p>Master Java fundamentals and object-oriented programming.</p>
+
+                    <div class="course-meta">
+                        <span>⭐ 4.8</span>
+                        <span>28 Hours</span>
+                    </div>
+
+                    <div class="course-bottom">
+                        <strong>₹2,299</strong>
+                        <button class="details-btn" data-course="Java Programming Masterclass">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="course-card"
+                data-title="React JS Frontend Development"
+                data-category="Development">
+
+                <div class="course-image">
+                    <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&w=800&q=80"
+                        alt="React JS">
+                    <span>REACT JS</span>
+                </div>
+
+                <div class="course-content">
+                    <small>DEVELOPMENT</small>
+                    <h3>React JS Frontend Development</h3>
+                    <p>Build modern and responsive React applications.</p>
+
+                    <div class="course-meta">
+                        <span>⭐ 4.9</span>
+                        <span>20 Hours</span>
+                    </div>
+
+                    <div class="course-bottom">
+                        <strong>₹2,499</strong>
+                        <button class="details-btn" data-course="React JS Frontend Development">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4 -->
+            <div class="course-card"
+                data-title="Full Stack Java Development"
+                data-category="Development">
+
+                <div class="course-image">
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=80"
+                        alt="Full Stack Development">
+                    <span>FULL STACK</span>
+                </div>
+
+                <div class="course-content">
+                    <small>DEVELOPMENT</small>
+                    <h3>Full Stack Java Development</h3>
+                    <p>Learn frontend, Java backend, databases and APIs.</p>
+
+                    <div class="course-meta">
+                        <span>⭐ 4.8</span>
+                        <span>35 Hours</span>
+                    </div>
+
+                    <div class="course-bottom">
+                        <strong>₹2,999</strong>
+                        <button class="details-btn" data-course="Full Stack Java Development">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5 -->
+            <div class="course-card"
+                data-title="Python Programming"
+                data-category="Development">
+
+                <div class="course-image">
+                    <img src="https://images.unsplash.com/photo-1526379095098-d400fd0bf935?auto=format&fit=crop&w=800&q=80"
+                        alt="Python">
+                    <span>PYTHON</span>
+                </div>
+
+                <div class="course-content">
+                    <small>DEVELOPMENT</small>
+                    <h3>Python Programming</h3>
+                    <p>Learn Python programming from basics to advanced concepts.</p>
+
+                    <div class="course-meta">
+                        <span>⭐ 4.9</span>
+                        <span>26 Hours</span>
+                    </div>
+
+                    <div class="course-bottom">
+                        <strong>₹2,199</strong>
+                        <button class="details-btn" data-course="Python Programming">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6 -->
+            <div class="course-card"
+                data-title="UI UX Design Masterclass"
+                data-category="Design">
+
+                <div class="course-image">
+                    <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=800&q=80"
+                        alt="UI UX Design">
+                    <span>UI / UX</span>
+                </div>
+
+                <div class="course-content">
+                    <small>DESIGN</small>
+                    <h3>UI/UX Design Masterclass</h3>
+                    <p>Learn user research, wireframes and modern UI design.</p>
+
+                    <div class="course-meta">
+                        <span>⭐ 4.9</span>
+                        <span>18 Hours</span>
+                    </div>
+
+                    <div class="course-bottom">
+                        <strong>₹1,899</strong>
+                        <button class="details-btn" data-course="UI UX Design Masterclass">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 7 -->
+            <div class="course-card"
+                data-title="Figma UI Design Complete Course"
+                data-category="Design">
+
+                <div class="course-image">
+                    <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?auto=format&fit=crop&w=800&q=80"
+                        alt="Figma Design">
+                    <span>FIGMA</span>
+                </div>
+
+                <div class="course-content">
+                    <small>DESIGN</small>
+                    <h3>Figma UI Design Complete Course</h3>
+                    <p>Create professional interfaces and prototypes using Figma.</p>
+
+                    <div class="course-meta">
+                        <span>⭐ 4.8</span>
+                        <span>15 Hours</span>
+                    </div>
+
+                    <div class="course-bottom">
+                        <strong>₹1,699</strong>
+                        <button class="details-btn" data-course="Figma UI Design Complete Course">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 8 -->
+            <div class="course-card"
+                data-title="Graphic Design Essentials"
+                data-category="Design">
+
+                <div class="course-image">
+                    <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=800&q=80"
+                        alt="Graphic Design">
+                    <span>GRAPHIC DESIGN</span>
+                </div>
+
+                <div class="course-content">
+                    <small>DESIGN</small>
+                    <h3>Graphic Design Essentials</h3>
+                    <p>Learn typography, layouts, branding and visual design.</p>
+
+                    <div class="course-meta">
+                        <span>⭐ 4.7</span>
+                        <span>16 Hours</span>
+                    </div>
+
+                    <div class="course-bottom">
+                        <strong>₹1,599</strong>
+                        <button class="details-btn" data-course="Graphic Design Essentials">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 9 -->
+            <div class="course-card"
+                data-title="Business Management Essentials"
+                data-category="Business">
+
+                <div class="course-image">
+                    <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=800&q=80"
+                        alt="Business Management">
+                    <span>BUSINESS</span>
+                </div>
+
+                <div class="course-content">
+                    <small>BUSINESS</small>
+                    <h3>Business Management Essentials</h3>
+                    <p>Understand leadership, management and business strategy.</p>
+
+                    <div class="course-meta">
+                        <span>⭐ 4.8</span>
+                        <span>14 Hours</span>
+                    </div>
+
+                    <div class="course-bottom">
+                        <strong>₹1,799</strong>
+                        <button class="details-btn" data-course="Business Management Essentials">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 10 -->
+            <div class="course-card"
+                data-title="Entrepreneurship Startup Guide"
+                data-category="Business">
+
+                <div class="course-image">
+                    <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=800&q=80"
+                        alt="Entrepreneurship">
+                    <span>STARTUP</span>
+                </div>
+
+                <div class="course-content">
+                    <small>BUSINESS</small>
+                    <h3>Entrepreneurship Startup Guide</h3>
+                    <p>Learn how to plan, launch and grow a successful startup.</p>
+
+                    <div class="course-meta">
+                        <span>⭐ 4.7</span>
+                        <span>12 Hours</span>
+                    </div>
+
+                    <div class="course-bottom">
+                        <strong>₹1,499</strong>
+                        <button class="details-btn" data-course="Entrepreneurship Startup Guide">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 11 -->
+            <div class="course-card"
+                data-title="Project Management Professional"
+                data-category="Business">
+
+                <div class="course-image">
+                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80"
+                        alt="Project Management">
+                    <span>PROJECT MANAGEMENT</span>
+                </div>
+
+                <div class="course-content">
+                    <small>BUSINESS</small>
+                    <h3>Project Management Professional</h3>
+                    <p>Master planning, teamwork, execution and project delivery.</p>
+
+                    <div class="course-meta">
+                        <span>⭐ 4.8</span>
+                        <span>17 Hours</span>
+                    </div>
+
+                    <div class="course-bottom">
+                        <strong>₹1,999</strong>
+                        <button class="details-btn" data-course="Project Management Professional">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 12 -->
+            <div class="course-card"
+                data-title="Digital Marketing Strategy"
+                data-category="Marketing">
+
+                <div class="course-image">
+                    <img src="https://images.unsplash.com/photo-1533750349088-cd871a92f312?auto=format&fit=crop&w=800&q=80"
+                        alt="Digital Marketing">
+                    <span>DIGITAL MARKETING</span>
+                </div>
+
+                <div class="course-content">
+                    <small>MARKETING</small>
+                    <h3>Digital Marketing Strategy</h3>
+                    <p>Learn SEO, paid ads, content marketing and analytics.</p>
+
+                    <div class="course-meta">
+                        <span>⭐ 4.9</span>
+                        <span>19 Hours</span>
+                    </div>
+
+                    <div class="course-bottom">
+                        <strong>₹1,899</strong>
+                        <button class="details-btn" data-course="Digital Marketing Strategy">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 13 -->
+            <div class="course-card"
+                data-title="Social Media Marketing"
+                data-category="Marketing">
+
+                <div class="course-image">
+                    <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=800&q=80"
+                        alt="Social Media Marketing">
+                    <span>SOCIAL MEDIA</span>
+                </div>
+
+                <div class="course-content">
+                    <small>MARKETING</small>
+                    <h3>Social Media Marketing</h3>
+                    <p>Build social media campaigns and grow online audiences.</p>
+
+                    <div class="course-meta">
+                        <span>⭐ 4.8</span>
+                        <span>13 Hours</span>
+                    </div>
+
+                    <div class="course-bottom">
+                        <strong>₹1,499</strong>
+                        <button class="details-btn" data-course="Social Media Marketing">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 14 -->
+            <div class="course-card"
+                data-title="Content Marketing Mastery"
+                data-category="Marketing">
+
+                <div class="course-image">
+                    <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=800&q=80"
+                        alt="Content Marketing">
+                    <span>CONTENT</span>
+                </div>
+
+                <div class="course-content">
+                    <small>MARKETING</small>
+                    <h3>Content Marketing Mastery</h3>
+                    <p>Create engaging content and build a strong digital brand.</p>
+
+                    <div class="course-meta">
+                        <span>⭐ 4.7</span>
+                        <span>11 Hours</span>
+                    </div>
+
+                    <div class="course-bottom">
+                        <strong>₹1,399</strong>
+                        <button class="details-btn" data-course="Content Marketing Mastery">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 15 -->
+            <div class="course-card"
+                data-title="Python & Data Science"
+                data-category="AI & Data">
+
+                <div class="course-image">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80"
+                        alt="Data Science">
+                    <span>DATA SCIENCE</span>
+                </div>
+
+                <div class="course-content">
+                    <small>AI & DATA</small>
+                    <h3>Python & Data Science</h3>
+                    <p>Learn Python, data analysis, visualization and statistics.</p>
+
+                    <div class="course-meta">
+                        <span>⭐ 4.9</span>
+                        <span>30 Hours</span>
+                    </div>
+
+                    <div class="course-bottom">
+                        <strong>₹2,499</strong>
+                        <button class="details-btn" data-course="Python & Data Science">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 16 -->
+            <div class="course-card"
+                data-title="Artificial Intelligence Fundamentals"
+                data-category="AI & Data">
+
+                <div class="course-image">
+                    <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80"
+                        alt="Artificial Intelligence">
+                    <span>ARTIFICIAL INTELLIGENCE</span>
+                </div>
+
+                <div class="course-content">
+                    <small>AI & DATA</small>
+                    <h3>Artificial Intelligence Fundamentals</h3>
+                    <p>Understand AI concepts, machine learning and intelligent systems.</p>
+
+                    <div class="course-meta">
+                        <span>⭐ 4.8</span>
+                        <span>25 Hours</span>
+                    </div>
+
+                    <div class="course-bottom">
+                        <strong>₹2,699</strong>
+                        <button class="details-btn" data-course="Artificial Intelligence Fundamentals">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 17 -->
+            <div class="course-card"
+                data-title="Machine Learning with Python"
+                data-category="AI & Data">
+
+                <div class="course-image">
+                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80"
+                        alt="Machine Learning">
+                    <span>MACHINE LEARNING</span>
+                </div>
+
+                <div class="course-content">
+                    <small>AI & DATA</small>
+                    <h3>Machine Learning with Python</h3>
+                    <p>Build machine learning models using Python and real datasets.</p>
+
+                    <div class="course-meta">
+                        <span>⭐ 4.9</span>
+                        <span>32 Hours</span>
+                    </div>
+
+                    <div class="course-bottom">
+                        <strong>₹2,799</strong>
+                        <button class="details-btn" data-course="Machine Learning with Python">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 18 -->
+            <div class="course-card"
+                data-title="Professional Photography"
+                data-category="Photography">
+
+                <div class="course-image">
+                    <img src="https://images.unsplash.com/photo-1452780212940-6f5c0d14d848?auto=format&fit=crop&w=800&q=80"
+                        alt="Professional Photography">
+                    <span>PHOTOGRAPHY</span>
+                </div>
+
+                <div class="course-content">
+                    <small>PHOTOGRAPHY</small>
+                    <h3>Professional Photography</h3>
+                    <p>Learn camera settings, composition and professional photography.</p>
+
+                    <div class="course-meta">
+                        <span>⭐ 4.8</span>
+                        <span>15 Hours</span>
+                    </div>
+
+                    <div class="course-bottom">
+                        <strong>₹1,799</strong>
+                        <button class="details-btn" data-course="Professional Photography">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 19 -->
+            <div class="course-card"
+                data-title="Mobile Photography Masterclass"
+                data-category="Photography">
+
+                <div class="course-image">
+                    <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=800&q=80"
+                        alt="Mobile Photography">
+                    <span>MOBILE PHOTO</span>
+                </div>
+
+                <div class="course-content">
+                    <small>PHOTOGRAPHY</small>
+                    <h3>Mobile Photography Masterclass</h3>
+                    <p>Capture professional-quality photos using your smartphone.</p>
+
+                    <div class="course-meta">
+                        <span>⭐ 4.7</span>
+                        <span>10 Hours</span>
+                    </div>
+
+                    <div class="course-bottom">
+                        <strong>₹999</strong>
+                        <button class="details-btn" data-course="Mobile Photography Masterclass">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 20 -->
+            <div class="course-card"
+                data-title="Photo Editing & Lightroom"
+                data-category="Photography">
+
+                <div class="course-image">
+                    <img src="https://images.unsplash.com/photo-1542744094-3a31f272c490?auto=format&fit=crop&w=800&q=80"
+                        alt="Photo Editing">
+                    <span>PHOTO EDITING</span>
+                </div>
+
+                <div class="course-content">
+                    <small>PHOTOGRAPHY</small>
+                    <h3>Photo Editing & Lightroom</h3>
+                    <p>Master professional photo editing and color correction.</p>
+
+                    <div class="course-meta">
+                        <span>⭐ 4.8</span>
+                        <span>12 Hours</span>
+                    </div>
+
+                    <div class="course-bottom">
+                        <strong>₹1,299</strong>
+                        <button class="details-btn" data-course="Photo Editing & Lightroom">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="no-results" id="noResults">
+            No courses found.
+        </div>
+
+    </div>
+</section>
+
+<section class="section" id="instructors">
+    <div class="container">
+
+        <div class="section-heading">
+            <span>LEARN FROM THE BEST</span>
+            <h2>Our Expert Instructors</h2>
+        </div>
+
+        <div class="instructor-grid">
+
+            <div class="instructor-card">
+                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=500&q=80"
+                    alt="Instructor">
+                <h3>Alex Johnson</h3>
+                <p>Full Stack Developer</p>
+                <span>⭐ 4.9 Instructor</span>
+            </div>
+
+            <div class="instructor-card">
+                <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=500&q=80"
+                    alt="Instructor">
+                <h3>Sarah Williams</h3>
+                <p>UI/UX Designer</p>
+                <span>⭐ 4.8 Instructor</span>
+            </div>
+
+            <div class="instructor-card">
+                <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=500&q=80"
+                    alt="Instructor">
+                <h3>Emily Carter</h3>
+                <p>Digital Marketing Expert</p>
+                <span>⭐ 4.9 Instructor</span>
+            </div>
+
+            <div class="instructor-card">
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=500&q=80"
+                    alt="Instructor">
+                <h3>Michael Lee</h3>
+                <p>Data Scientist</p>
+                <span>⭐ 4.9 Instructor</span>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="section reviews-section" id="reviews">
+    <div class="container">
+
+        <div class="section-heading">
+            <span>STUDENT REVIEWS</span>
+            <h2>What Our Students Say</h2>
+        </div>
+
+        <div class="review-grid">
+
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>
+                    "The courses are very practical and easy to understand.
+                    I improved my web development skills significantly."
+                </p>
+                <h4>Priya S.</h4>
+                <span>Web Development Student</span>
+            </div>
+
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>
+                    "The instructors explain concepts clearly and the projects
+                    helped me build a strong portfolio."
+                </p>
+                <h4>Rahul K.</h4>
+                <span>Java Student</span>
+            </div>
+
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>
+                    "Amazing learning platform with professional content
+                    and affordable courses."
+                </p>
+                <h4>Ananya R.</h4>
+                <span>UI/UX Student</span>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="cta">
+    <div class="container">
+        <h2>Ready to Start Learning?</h2>
+        <p>Choose a course and take the next step toward your career.</p>
+        <button class="primary-btn" id="ctaBtn">Explore Courses</button>
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <div class="container footer-content">
+        <div>
+            <h2>Learnova</h2>
+            <p>Learn today. Grow tomorrow.</p>
+        </div>
+
+        <p>© 2026 Learnova. All Rights Reserved.</p>
+    </div>
+</footer>
+
+
+<!-- COURSE MODAL -->
+
+<div class="modal" id="courseModal">
+
+    <div class="modal-content">
+
+        <button class="close-btn" id="closeModal">&times;</button>
+
+        <div id="courseDetails">
+
+            <span class="modal-label">COURSE DETAILS</span>
+
+            <h2 id="modalTitle">Course Title</h2>
+
+            <p id="modalDescription">
+                Course description.
+            </p>
+
+            <div class="modal-info">
+                <span>⭐ 4.9 Rating</span>
+                <span>Online Learning</span>
+                <span>Certificate Included</span>
+            </div>
+
+            <button class="enroll-btn" id="showEnrollForm">
+                Enroll Now
+            </button>
+
+        </div>
+
+
+        <!-- ENROLLMENT FORM -->
+
+        <form id="enrollmentForm">
+
+            <h3>Enter Your Details</h3>
+
+            <label for="studentName">Full Name</label>
+            <input type="text" id="studentName"
+                placeholder="Enter your full name">
+
+            <label for="studentEmail">Email Address</label>
+            <input type="email" id="studentEmail"
+                placeholder="Enter your email">
+
+            <label for="studentPhone">Phone Number</label>
+            <input type="tel" id="studentPhone"
+                placeholder="Enter 10-digit phone number"
+                maxlength="10">
+
+            <button type="submit" class="enroll-btn">
+                Confirm Enrollment
+            </button>
+
+        </form>
+
+
+        <!-- SUCCESS -->
+
+        <div class="success-message" id="successMessage">
+
+            <div class="success-icon">✓</div>
+
+            <h2>Enrollment Successful!</h2>
+
+            <p>
+                Thank you for enrolling. Your course registration
+                has been completed successfully.
+            </p>
+
+            <button class="enroll-btn" id="successClose">
+                Continue
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
